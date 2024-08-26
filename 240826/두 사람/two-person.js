@@ -13,4 +13,6 @@ const man = 'M'
 
 if ((aAge >= adult && aSex === man) || (bAge >= adult && bSex === man)) {
     console.log(1)
+} else {
+    console.log(0)
 }
