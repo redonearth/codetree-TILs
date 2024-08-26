@@ -4,12 +4,18 @@ const [a, b, c] = fs.readFileSync(0).toString().trim().split(' ').map(Number)
 
 let answer;
 
-if (a > b && a > c) {
-    answer = a
-} else if (b > a && b > c) {
-    answer = b
+if (a >= b) {
+    if (a >= c) {
+        answer = a
+    } else {
+        answer = c
+    }
 } else {
-    answer = c
+    if (b >= c) {
+        answer = b
+    } else {
+        answer = c
+    }
 }
 
 console.log(answer)
