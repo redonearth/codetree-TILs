@@ -11,8 +11,10 @@ for (let command of commands) {
     }
 
     if (command === 'D') {
-        if (arr.length) arr.shift()
+        if (arr.length) {
+            arr.shift()
+        }
     }
 }
 
-console.log(arr.join(' '))
+console.log(arr.length ? arr.join(' ') : 'error')
