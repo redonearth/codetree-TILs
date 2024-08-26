@@ -1,4 +1,4 @@
 const fs = require('fs')
-const input = fs.readFileSync(0).toString()
+const input = fs.readFileSync(0).toString().trim()
 
 console.log(`Your score is ${input} point.`)
