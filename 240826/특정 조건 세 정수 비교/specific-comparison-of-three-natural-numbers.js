@@ -10,7 +10,7 @@ if (Math.min(a, b, c) === a) {
     answer.push(0)
 }
 
-if (a === b === c) {
+if (a === b && a === c && b === c) {
     answer.push(1)
 } else {
     answer.push(0)
