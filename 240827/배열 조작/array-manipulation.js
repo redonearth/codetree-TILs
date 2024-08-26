@@ -6,14 +6,15 @@ const commands = [...input[0]]
 const arr = input[2].split(' ')
 
 for (let command of commands) {
-    if (command === 'R') {
-        arr.reverse()
+    if (command === 'D') {
+        if (!arr.length) {
+            return console.log('error')
+        }
+        arr.shift()
     }
 
-    if (command === 'D') {
-        if (arr.length) {
-            arr.shift()
-        }
+    if (command === 'R') {
+        arr.reverse()
     }
 }
 
