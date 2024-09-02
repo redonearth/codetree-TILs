@@ -6,7 +6,7 @@ let oddSum = 0
 
 for (let i = 0; i <= input.length; i++) {
     if (input[i] % 2 !== 0 && input[i] % 3 === 0) {
-        oddSum += i
+        oddSum += input[i]
     }
 }
 
