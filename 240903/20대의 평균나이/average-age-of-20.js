@@ -7,7 +7,8 @@ let sum = 0, cnt = 0
 while (true) {
     let age = input[cnt]
 
-    if (age < 20 || age >= 30) {
+    // if (age < 20 || age >= 30) {
+    if (parseInt(age / 10) !== 2) {
         console.log((sum / cnt).toFixed(2))
         break
     }
