@@ -9,7 +9,7 @@ while (true) {
     let age = input[index]
     index++
 
-    if (age > 29) break
+    if (age < 20 || age >= 30) break
     sum += age
     cnt++
 }
