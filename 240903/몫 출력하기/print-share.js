@@ -12,7 +12,9 @@ while (true) {
     if (num % 2 === 0) {
         console.log(num / 2)
         cnt++
+    } else {
+        continue
     }
 
-    if (cnt === 3) break
+    if (cnt >= 3) break
 }
