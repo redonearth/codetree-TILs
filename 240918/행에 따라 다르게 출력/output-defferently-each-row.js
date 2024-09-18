@@ -12,8 +12,9 @@ for (let i = 1; i < n; i++) {
             cnt = n
         }
     } else {
-        for (let j = n + 2; j < n * 3; j += 2) {
+        for (let j = n + 2; j <= n * 3; j += 2) {
             str += j
+            cnt = n + 2
         }
     }
     console.log(str)
